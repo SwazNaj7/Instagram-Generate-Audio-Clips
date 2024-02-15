@@ -14,7 +14,7 @@ audio_path = ''
 output_path = ''
 
 def add_static_image_to_audio():
-    audio_clip = AudioFileClip(audio_path).subclip(0, 60)
+    audio_clip = AudioFileClip(audio_path).subclip(0, 58)
     image_clip = ImageClip(image_path).set_duration(audio_clip.duration)
     video_clip = image_clip.set_audio(audio_clip)
     video_clip.fps = 1
