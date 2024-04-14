@@ -20,6 +20,10 @@ pip install -r requirements.txt
 
 Simply navigate to the same directory as the main.py file and run
 
+```bash
+python main.py
+```
+
 # Customizing the Length of Video Clips
 
 The `add_static_image_to_audio` function is set up to create video clips with a default duration. If you would like to customize the length of your video to match the length of your audio clip or to set it to a specific duration, you will need to modify the `subclip` method in the `add_static_image_to_audio` function.
@@ -50,6 +54,3 @@ Or if you wish to use full length of your audio clip remove the .subclip() metho
 ```python
 audio_clip = AudioFileClip(audio_path)
 ```
-
-```bash
-python main.py
