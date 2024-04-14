@@ -60,8 +60,6 @@ class AppUI(customtkinter.CTk):
     def showInFolder(self, path):
         path = os.path.normpath(path)
         if os.path.isfile(path):
-            dir_path = os.path.dirname(path)
-            file_name = os.path.basename(path)
             os.system(f'explorer /select, "{path}"')
         else:
             messagebox.showerror("Error", "Video file not found")
